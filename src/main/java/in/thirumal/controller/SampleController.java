@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/client2")
 public class SampleController {
 
-	@GetMapping("/")
+	@GetMapping("")
 	public IntSummaryStatistics getStatistic() {
 		return IntStream.range(0, 50).summaryStatistics();
 	}
