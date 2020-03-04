@@ -20,6 +20,7 @@ public class SampleController {
 
 	@GetMapping("")
 	public IntSummaryStatistics getStatistic() {
+		System.out.println("Statistic:-");
 		return IntStream.range(0, 50).summaryStatistics();
 	}
 }
