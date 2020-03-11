@@ -12,4 +12,13 @@ Eureka client 2 for client load balancing
 
 # Swagger 2 is accessible from 
 
-> [http://localhost:8082/2/swagger-ui.html](http://localhost:8082/2/swagger-ui.html)
+> [http://localhost:{{port}}/2/swagger-ui.html](http://localhost:8082/2/swagger-ui.html)
+
+# Run it using shell script
+
+> ./eureka-client-2.sh {{NUMBER_OF_INSTANCE}}
+
+Eg:
+> ./eureka-client-2.sh 3
+
+By default total number of instance to start is 1
