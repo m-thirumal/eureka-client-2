@@ -55,9 +55,14 @@ eureka:
     instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${random.int[1,999999]}
     appname: eureka-client-2
     leaseRenewalIntervalInSeconds: 10
+#    homePageUrl: /2
+#    status-page-url-path: /2/info
+#    health-check-url-path: /2/actuator/health
     preferIpAddress: true
   client:
     enabled: true
+    healthcheck:
+      enabled: true
     register-with-eureka: true
     fetch-registry: true
     service-url:
