@@ -22,3 +22,7 @@ Eg:
 > ./eureka-client-2.sh 3
 
 By default total number of instance to start is 1
+
+# Shutdown application using actuator endpoint
+
+	curl -i -X POST http://localhost:{PORT}/actuator/shutdown
